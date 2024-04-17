@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.competences {
+  display: flex;
+  align-items: baseline;
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.competences div {
+  border-radius: 50%;
+}
+
+#first-planet {
+ height: 48px;
+ width: 48px;
+ border-radius: 50%;
+ background-color: #ff7100;
+}
