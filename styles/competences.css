@@ -1,0 +1,143 @@
+@keyframes first-planet {
+    from {background-color: #c55800;}
+    to {background-color: #ff7100;}
+  }
+@keyframes second-planet {
+    from {background-color: #c55800;}
+    to {background-color: #54a93a;}
+  }
+@keyframes third-planet {
+    from {background-color: #ff7100;}
+    to {background-color: #fff347;}
+  }
+@keyframes fourth-planet {
+    from {background-color: #ff7100;}
+    to {background-color: #84c8fc;}
+  }
+@keyframes fifth-planet {
+    from {background-color: #ff7100;}
+    to {background-color: #679951;}
+  }
+
+.skills {
+  width: 50vw;
+  height: 110%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+
+}
+
+.skills > div {
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.skills > div > p {
+  font-size: 2.8rem;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+  transition: 0.4s ease;
+  transform-origin: center center;
+  opacity: 0;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.skills > div:hover {
+  height: 280px;
+  width: 280px;
+}
+
+.skills > div > p:hover {
+  transition: 0.4s ease;
+  transform-origin: center center;
+  opacity: 1;
+}
+
+.first-planet {
+  grid-column-start: 1;
+  height: 176px;
+  width: 176px;
+  border-radius: 50%;
+  background-color: #ff7100;
+  box-shadow: inset -8px 0 16px #fff34787;
+  animation-name: first-planet;
+  animation-duration: 8s;
+}
+
+.first-planet > p {
+  grid-column-start: 1;
+  margin: 4rem 0 0 4rem;
+}
+
+.second-planet {
+  grid-column-start: 2;
+  margin: 8rem 0 0 2rem;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #54a93a;
+  box-shadow: inset -4px 0 8px #fff347e3;
+  animation-name: second-planet;
+  animation-duration: 8s;
+}
+
+.second-planet > p {
+  grid-column-start: 2;
+  margin: 4rem 0 0 4rem;
+}
+
+.third-planet {
+  margin-top: 1rem;
+  grid-column-start: 3;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  animation-name: third-planet;
+  animation-duration: 8s;
+  background-color: #fff347;
+
+}
+
+.third-planet > p {
+  grid-column-start: 3;
+  margin-top: 6rem;
+  margin-left: -0.5rem;
+}
+
+.fourth-planet {
+  grid-column-start: 4;
+  margin: 4rem 0 0 2rem;
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  background-color: #84c8fc;
+  box-shadow: inset 16px 0 16px #fff34787;
+  animation-name: fourth-planet;
+  animation-duration: 8s;
+}
+
+.fourth-planet > p {
+  grid-column-start: 4;
+  margin-top: 6rem;
+  margin-left: -2.2rem;
+}
+
+.fifth-planet {
+  grid-column-start: 5;
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+  background-color: #679951;
+  box-shadow: inset 16px -4px 16px #fff34787;
+  animation-name: fifth-planet;
+  animation-duration: 8s;
+}
+
+.fifth-planet > p {
+  grid-column-start: 5;
+  margin-left: 1.6rem;
+}
