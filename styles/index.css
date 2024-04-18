@@ -1,9 +1,17 @@
-body {
-  background-image: url("../media/starry-background.gif");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* Même police dans toute l'app */
-
-div p {
+body {
+  background-image: url("../media/starry-background.gif");
+  --color-primary : #ff7100;
+  --text-color : white;
+  color: var(--text-color);
   font-family: "Oxanium", sans-serif;
+}
+
+p, h1, h2, h3 {
+  background-color: rgba(0,0,0,.75);
+  border-radius: 10%;
 }

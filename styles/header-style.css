@@ -1,13 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin: 100px auto;
 }
 
-.picture {
-    position: relative;
-    width: 50vw;
-    height: 500px;
-    border: 2px solid red;
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 100px;
+}
+
+.introduction h1 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.introduction h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.introduction p {
+    font-size: 1.8em;
 }
 
 .picture img {
@@ -16,38 +33,51 @@
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    position: absolute;
-    /* left: 287px;
-    top: 111px; */
-    left: 40%;
-    top: 20%;
   }
 
-.profile-frame>svg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translate(-106.69252276642277px, -265.0068932904809px);
-}
-
-.profile-frame {
-    position: absolute;
-    /* left: -350.31px;
-    top: -38.99px; */
-    left: -59%;
-    top: -10%;
-    width: 957px;
-    height: 315px;
-    opacity: 0.5;
-}
-
 nav div {
-    position: absolute;
-    right: 0px;
-    top: 0px;
     width: 422px;
     height: 82px;
     background: #000000;
     border: 1px solid #000000;
     border-radius: 100px 0px 0px 100px;
+    box-shadow: 0px 0px 10px 4px var(--color-primary);
+    position: absolute;
+    right: -330px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    transition: .2s ease;
+}
+
+nav div:hover {
+    right: 0px;
+}
+
+.button-experience {
+    top: 20px;
+}
+
+.button-experience img {
+    margin-bottom: 7px;
+}
+
+.button-skills {
+    top: 125px;
+}
+
+.button-education {
+    top: 230px;
+}
+
+.button-contact {
+    top: 335px;
+}
+
+nav div p {
+    font-size: 3em;
+    align-self: center;
+    padding-right: 10px;
+    color: var(--color-primary);
+    opacity: 0.9;
 }
