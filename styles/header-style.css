@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.picture {
+    position: relative;
+    width: 50vw;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.picture img {
+    display: block;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    /* left: 287px;
+    top: 111px; */
+    left: 40%;
+    top: 20%;
+  }
+
+.profile-frame>svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-106.69252276642277px, -265.0068932904809px);
+}
+
+.profile-frame {
+    position: absolute;
+    /* left: -350.31px;
+    top: -38.99px; */
+    left: -59%;
+    top: -10%;
+    width: 957px;
+    height: 315px;
+    opacity: 0.5;
+}
+
+nav div {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 422px;
+    height: 82px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 100px 0px 0px 100px;
+}
