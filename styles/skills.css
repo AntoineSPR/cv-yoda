@@ -169,3 +169,41 @@
   grid-column-start: 5;
   margin-left: 1.6rem;
 }
+
+@media screen and (max-width: 768px) {
+  .skills > div > p {
+    height: 100px;
+    width: 100px;
+  }
+
+  .skills > div:hover {
+    height: 280px;
+    width: 280px;
+  }
+
+  .first-planet {
+    height: 106px;
+    width: 106px;
+  }
+
+  .second-planet {
+    height: 64px;
+    width: 64px;
+  }
+
+  .third-planet {
+    height: 144px;
+    width: 144px;
+  }
+
+  .fourth-planet {
+    height: 118px;
+    width: 118px;
+  }
+
+  .fifth-planet {
+    height: 96px;
+    width: 96px;
+  }
+
+}
