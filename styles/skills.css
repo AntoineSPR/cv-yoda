@@ -50,6 +50,7 @@
 .skills > div {
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .skills > div > p {
@@ -57,7 +58,8 @@
   height: 200px;
   width: 200px;
   z-index: 1;
-  transition: 0.4s ease;
+  transition: 
+  0.5s ease;
   transform-origin: center center;
   opacity: 0;
   color: white;
