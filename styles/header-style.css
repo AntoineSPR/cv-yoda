@@ -35,6 +35,10 @@
     object-fit: cover;
   }
 
+nav > img {
+    display: none;
+}
+
 nav div {
     width: 422px;
     height: 82px;
@@ -80,4 +84,93 @@ nav div p {
     padding-right: 10px;
     color: var(--color-primary);
     opacity: 0.9;
+}
+
+input[type="checkbox"]{
+    display: none;
+} 
+
+.black-sun {
+    display: none;
+}
+
+@media screen and (max-width: 374px) {
+    nav div{
+        width: 280px;
+        height: 8px;
+        background: #55AA3A;
+        border-radius: 4px 0px 0px 4px;
+        border: none;
+        right: 0px;
+        padding-left: 10px;
+        transition: .2s ease;
+        box-shadow: 0px 0px 15px #55AA3A;
+        margin-top: 110px;
+        display: none;
+    }
+
+    nav div img {
+        display: none;
+    }
+
+    nav div p {
+        background-color: black;
+        color: var(--text-color);
+        width: 212px;
+        height: 24px;
+        border-radius: 32px;
+        border : 2px solid #009e27;
+        font-size: 2em;
+        margin: 0px;
+        padding: 0px 5px 15px 5px;
+        text-align: center;
+        opacity: 1;
+    }
+
+    nav > img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        transition: .2s ease;
+    }
+
+    input[type="checkbox"]{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked ~ nav div{
+        display: flex;
+    }
+
+    .black-sun {
+        display: block;
+        position: absolute; 
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 250px;
+        height: 250px;
+        background: #000000;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 4px #FF7100;
+    }
+
+    #checkbox-menu:checked ~ .black-sun {
+        width: 200vh;
+        height: 200vh;
+        transition: width 0.3s, height 0.3s;
+    }
 }
