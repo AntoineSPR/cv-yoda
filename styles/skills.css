@@ -47,12 +47,6 @@
   grid-template-rows: 1fr;
 }
 
-.skills > div {
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-
 .skills > div > p {
   font-size: 2.8rem;
   height: 200px;
@@ -69,10 +63,11 @@
 .skills > div:hover {
   height: 280px;
   width: 280px;
+  transition: 1s ease;
 }
 
-.skills > div > p:hover {
-  transition: 0.4s ease;
+.skills > div:hover > p {
+  transition: 1s ease;
   transform-origin: center center;
   opacity: 1;
 }
@@ -130,6 +125,7 @@
   width: 216px;
   margin-top: 1rem;
   background-color: #ffcf47;
+  border-radius: 50%;
   filter: blur(12px);
   z-index: 0;
 }
