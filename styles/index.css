@@ -7,14 +7,50 @@ body {
   height: auto;
   width: 100vw;
   background-image: url("../media/starry-background.gif");
-  --color-primary : #ff7100;
-  --text-color : white;
+  --color-primary: #ff7100;
+  --text-color: white;
   color: var(--text-color);
   font-family: "Oxanium", sans-serif;
   overflow-x: hidden;
 }
 
-p, h1, h2, h3 {
-  background-color: rgba(0,0,0,.75);
+section {
+  margin-bottom: 96px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10%;
+}
+
+main > div,
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: 4px;
+  border: none;
+  margin: 4rem 2rem;
+}
+main > div > p,
+footer > div > p {
+  text-align: center;
+  width: auto;
+  height: 80px;
+  border: 2px solid var(--color-primary);
+  font-size: 4rem;
+  border-radius: 48px;
+  padding: 0 40px;
+}
+
+footer > div > p:last-child {
+  padding: 0 24px;
+  padding-top: 24px;
+  font-size: 2.2rem;
 }
