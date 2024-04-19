@@ -1,18 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: auto;
   width: 100vw;
   background-image: url("../media/starry-background.gif");
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 44px;
-}
-/* Même police dans toute l'app */
-
-div p {
+  --color-primary : #ff7100;
+  --text-color : white;
+  color: var(--text-color);
   font-family: "Oxanium", sans-serif;
+  overflow-x: hidden;
+}
+
+p, h1, h2, h3 {
+  background-color: rgba(0,0,0,.75);
+  border-radius: 10%;
 }
