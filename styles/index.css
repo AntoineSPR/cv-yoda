@@ -1,12 +1,16 @@
 body {
+  height: auto;
+  width: 100vw;
+  background-image: url("../media/starry-background.gif");
+}
+
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 44px;
-  background-image: url("../media/starry-background.gif");
 }
-
 /* Même police dans toute l'app */
 
 div p {
