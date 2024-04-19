@@ -35,8 +35,13 @@
     object-fit: cover;
   }
 
+nav {
+    z-index: 100;
+}
+
 nav > img {
     display: none;
+    z-index: 101;
 }
 
 nav div {
@@ -52,6 +57,7 @@ nav div {
     justify-content: space-between;
     padding-left: 10px;
     transition: .2s ease;
+    z-index: 101;
 }
 
 nav div:hover {
@@ -86,15 +92,17 @@ nav div p {
     opacity: 0.9;
 }
 
-input[type="checkbox"]{
+#checkbox-menu{
     display: none;
+    z-index: 102;
 } 
 
 .black-sun {
     display: none;
+    z-index: 100;
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 768px) {
     nav div{
         width: 280px;
         height: 8px;
@@ -103,10 +111,10 @@ input[type="checkbox"]{
         border: none;
         right: 0px;
         padding-left: 10px;
-        transition: .2s ease;
+        transition: .3s ease;
         box-shadow: 0px 0px 15px #55AA3A;
         margin-top: 110px;
-        display: none;
+        right:-100%;
     }
 
     nav div img {
@@ -140,19 +148,18 @@ input[type="checkbox"]{
         transition: .2s ease;
     }
 
-    input[type="checkbox"]{
+    #checkbox-menu {
         display: block;
         position: absolute;
         top: 0;
         right: 0;
         width: 100px;
         height: 100px;
-        z-index: 2;
         opacity: 0;
     }
 
     #checkbox-menu:checked ~ nav div{
-        display: flex;
+        right: 0;
     }
 
     .black-sun {
@@ -170,8 +177,22 @@ input[type="checkbox"]{
     }
 
     #checkbox-menu:checked ~ .black-sun {
-        width: 200vh;
-        height: 200vh;
-        transition: width 0.3s, height 0.3s;
+        width: 1200px;
+        height: 1200px;
+    }
+
+    .profile {
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+
+    .introduction {
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    .introduction p {
+        text-align: center;
     }
 }
