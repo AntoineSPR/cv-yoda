@@ -1,0 +1,22 @@
+.card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #C55800;
+}
+
+.card:nth-child(2) img{
+    box-shadow: 2px 2px 2px 0px #C8D22E;
+}
+
+.card:nth-child(3) img{
+    box-shadow: 2px 2px 2px 0px #52A338;
+}
+
+.experience, 
+.education {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px auto;
+}
