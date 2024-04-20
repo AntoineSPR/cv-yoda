@@ -45,7 +45,7 @@
 
 .skills__desktop {
   display: grid;
-  grid-template-columns: repeat(4, 16rem);
+  grid-template-columns: repeat(4, 12rem);
   grid-template-rows: 16rem;
 }
 
@@ -133,10 +133,11 @@
   height: 17.5rem;
   width: 17.5rem;
   transition: 1s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
 .skills__desktop > div:hover > p {
+  margin: 4rem 2rem;
   transition: 1s ease;
   transform-origin: center center;
   opacity: 1;
