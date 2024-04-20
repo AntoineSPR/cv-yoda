@@ -39,7 +39,7 @@ footer > div {
   margin: 4rem 2rem;
 }
 main > div > p,
-footer > div > p {
+footer > div > q {
   text-align: center;
   width: auto;
   height: 80px;
@@ -49,7 +49,7 @@ footer > div > p {
   padding: 0 40px;
 }
 
-footer > div > p:last-child {
+footer > div > q {
   padding: 0 24px;
   padding-top: 24px;
   font-size: 2.2rem;
