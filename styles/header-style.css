@@ -62,6 +62,7 @@ nav div {
 
 nav div:hover {
     right: 0px;
+    cursor: pointer;
 }
 
 .button-experience {
