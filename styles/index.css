@@ -47,6 +47,7 @@ footer > div > q {
   font-size: 4rem;
   border-radius: 48px;
   padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 footer > div > q {
