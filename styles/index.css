@@ -4,21 +4,42 @@
 }
 
 body {
+  --color-primary: #ff7100;
+  --text-color: white;
+
   height: auto;
   width: 100vw;
   background-image: url("../media/starry-background.gif");
-  --color-primary : #ff7100;
-  --text-color : white;
   color: var(--text-color);
   font-family: "Oxanium", sans-serif;
   overflow-x: hidden;
 }
 
-p, h1, h2, h3 {
-  background-color: rgba(0,0,0,.75);
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content; */
+}
+
+p,
+h1,
+h2,
+h3 {
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10%;
 }
 
-main {
-  width: fit-content;
+.footer > p:last-child {
+  font-size: 0.5rem;
+}
+
+.footer > p:last-child > a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.footer > p:last-child > a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
 }
