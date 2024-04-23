@@ -6,7 +6,6 @@
 }
 
 .card {
-    perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform .5s;
     position: relative;
@@ -16,7 +15,14 @@
     box-shadow: 2px 2px 2px 0px #C55800;
 }
 
-.card:hover {
+.card-container {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.card-container:hover .card {
     transform: rotateY(180deg);
 }
 
@@ -34,6 +40,7 @@
     box-shadow: 0px 0px 2px 3px #C55800;
     border-radius: 10px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .card img{
@@ -44,21 +51,22 @@
     object-fit: cover;
     border-radius: 10px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
-.card:nth-child(2) {
+.card-container:nth-child(2) .card {
     box-shadow: 2px 2px 2px 0px #C8D22E;
 }
 
-.card:nth-child(3) {
+.card-container:nth-child(3) .card {
     box-shadow: 2px 2px 2px 0px #52A338;
 } 
 
-.card:nth-child(2) .card-back {
+.card-container:nth-child(2) .card .card-back {
     box-shadow: 0px 0px 2px 3px #C8D22E;
 }
 
-.card:nth-child(3) .card-back {
+.card-container:nth-child(3) .card .card-back {
     box-shadow: 0px 0px 2px 3px #52A338;
 }
 
@@ -70,8 +78,8 @@
         gap: 32px;
     }
 
-    .card:hover,
-    .card:active {
+    .card-container:hover,
+    .card-container:active {
         transform: rotateY(180deg);
     }
 }
