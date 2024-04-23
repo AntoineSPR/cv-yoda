@@ -1,0 +1,12 @@
+.objective {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.objective > p {
+    font-size: 1.8rem;
+}
