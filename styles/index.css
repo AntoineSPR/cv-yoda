@@ -9,6 +9,8 @@ body {
   background-image: url("../media/starry-background.gif");
   --color-primary: #ff7100;
   --text-color: white;
+  --text-background-color: #000000bf;
+  --title-background-color: #000000;
   color: var(--text-color);
   font-family: "Oxanium", sans-serif;
   overflow-x: hidden;
@@ -22,7 +24,7 @@ p,
 h1,
 h2,
 h3 {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--text-background-color);
   border-radius: 10%;
 }
 
@@ -47,7 +49,7 @@ footer > div > q {
   font-size: 4rem;
   border-radius: 48px;
   padding: 0 40px;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--title-background-color);
 }
 
 footer > div > q {
