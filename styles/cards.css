@@ -1,3 +1,41 @@
+.experience, 
+.education {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px auto;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    box-shadow: 2px -2px 2px orange;
+    border-radius: 10px;
+}
+
 .card img{
     display: block;
     width: 300px;
@@ -13,11 +51,4 @@
 
 .card:nth-child(3) img{
     box-shadow: 2px 2px 2px 0px #52A338;
-}
-
-.experience, 
-.education {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 100px auto;
 }
