@@ -2,7 +2,7 @@
   align-self: space-around;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: space-around;
   gap: 4rem;
 }

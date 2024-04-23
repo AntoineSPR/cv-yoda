@@ -44,6 +44,7 @@
 }
 
 .skills__desktop {
+  align-self: center;
   display: grid;
   grid-template-columns: repeat(4, 12rem);
   grid-template-rows: 16rem;
