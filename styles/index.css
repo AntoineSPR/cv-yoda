@@ -10,8 +10,6 @@ body {
   height: auto;
   width: 100vw;
   background-image: url("../media/starry-background.gif");
-  --color-primary: #ff7100;
-  --text-color: white;
   color: var(--text-color);
   font-family: "Oxanium", sans-serif;
   overflow-x: hidden;
