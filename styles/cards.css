@@ -1,22 +1,85 @@
-.card img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 0px #C55800;
-}
-
-.card:nth-child(2) img{
-    box-shadow: 2px 2px 2px 0px #C8D22E;
-}
-
-.card:nth-child(3) img{
-    box-shadow: 2px 2px 2px 0px #52A338;
-}
-
 .experience, 
 .education {
     display: flex;
     justify-content: space-evenly;
     margin: 100px auto;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #C55800;
+}
+
+.card-container {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    box-shadow: 0px 0px 2px 3px #C55800;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card img{
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-container:nth-child(2) .card {
+    box-shadow: 2px 2px 2px 0px #C8D22E;
+}
+
+.card-container:nth-child(3) .card {
+    box-shadow: 2px 2px 2px 0px #52A338;
+} 
+
+.card-container:nth-child(2) .card .card-back {
+    box-shadow: 0px 0px 2px 3px #C8D22E;
+}
+
+.card-container:nth-child(3) .card .card-back {
+    box-shadow: 0px 0px 2px 3px #52A338;
+}
+
+@media screen and (max-width: 768px) {
+    .experience,
+    .education {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .card-container:hover,
+    .card-container:active {
+        transform: rotateY(180deg);
+    }
 }
