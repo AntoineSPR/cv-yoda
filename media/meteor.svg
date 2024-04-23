@@ -1,0 +1,98 @@
+<svg width="280px" xmlns="http://www.w3.org/2000/svg" height="280px" id="screenshot-e08b2a8a-90c0-80a6-8004-34c29e5637c7" viewBox="15 86 1170.385 845.014" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+  <g id="shape-e08b2a8a-90c0-80a6-8004-34c29e5637c7" style="opacity:0.5">
+    <defs>
+      <filter id="filter-render-207" x="-0.06165099268547548" y="-0.1873015873015873" width="280px" height="280px" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix">
+        </feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+        </feColorMatrix>
+        <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c">
+        </feMorphology>
+        <feOffset dx="0" dy="0">
+        </feOffset>
+        <feGaussianBlur stdDeviation="4">
+        </feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.44313725490196076 0 0 0 0 0 0 0 0 0.9 0">
+        </feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c">
+        </feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c" result="shape">
+        </feBlend>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+        </feColorMatrix>
+        <feMorphology radius="6" operator="erode" in="SourceAlpha" result="filter_3b3224ee-c3bb-804f-8004-305155e0a249">
+        </feMorphology>
+        <feOffset dx="0" dy="0">
+        </feOffset>
+        <feGaussianBlur stdDeviation="4">
+        </feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+        </feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.44313725490196076 0 0 0 0 0 0 0 0 0.75 0">
+        </feColorMatrix>
+        <feBlend mode="normal" in2="shape" result="filter_3b3224ee-c3bb-804f-8004-305155e0a249">
+        </feBlend>
+        <feGaussianBlur stdDeviation="4" result="filter_aae27a34-52a3-8066-8004-34bc0ec961ea">
+        </feGaussianBlur>
+      </filter>
+      <filter id="filter-shadow-render-207" x="-0.05329153605015677" y="-0.1619047619047619" width="280px" height="280px" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix">
+        </feFlood>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+        </feColorMatrix>
+        <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c">
+        </feMorphology>
+        <feOffset dx="0" dy="0">
+        </feOffset>
+        <feGaussianBlur stdDeviation="4">
+        </feGaussianBlur>
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.44313725490196076 0 0 0 0 0 0 0 0 0.9 0">
+        </feColorMatrix>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c">
+        </feBlend>
+        <feBlend mode="normal" in="SourceGraphic" in2="filter_e08b2a8a-90c0-80a6-8004-34bb317c054c" result="shape">
+        </feBlend>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+        </feColorMatrix>
+        <feMorphology radius="6" operator="erode" in="SourceAlpha" result="filter_3b3224ee-c3bb-804f-8004-305155e0a249">
+        </feMorphology>
+        <feOffset dx="0" dy="0">
+        </feOffset>
+        <feGaussianBlur stdDeviation="4">
+        </feGaussianBlur>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+        </feComposite>
+        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.44313725490196076 0 0 0 0 0 0 0 0 0.75 0">
+        </feColorMatrix>
+        <feBlend mode="normal" in2="shape" result="filter_3b3224ee-c3bb-804f-8004-305155e0a249">
+        </feBlend>
+      </filter>
+      <filter id="filter-blur-render-207" x="-0.008359456635318709" y="-0.025396825396825397" width="280px" height="280px" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix">
+        </feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+        </feBlend>
+        <feGaussianBlur stdDeviation="4" result="filter_aae27a34-52a3-8066-8004-34bc0ec961ea">
+        </feGaussianBlur>
+      </filter>
+    </defs>
+    <g class="fills" id="fills-e08b2a8a-90c0-80a6-8004-34c29e5637c7">
+      <path d="M174.634,287.890L433.090,313.611L921.332,479.082C1020.706,523.326,1072.680,623.719,1037.324,703.130L1037.324,703.130C1001.968,782.542,892.584,811.093,793.209,766.849L337.887,437.414L176.997,285.845L174.634,287.890Z" filter="url(#filter-render-207)" style="fill:#000000;fill-opacity:0.9">
+      </path>
+    </g>
+    <g id="strokes-e08b2a8a-90c0-80a6-8004-34c29e5637c7" class="strokes" filter="url(#filter-blur-render-207)">
+      <g class="inner-stroke-shape">
+        <defs>
+          <clipPath id="inner-stroke-render-207-e08b2a8a-90c0-80a6-8004-34c29e5637c7-0">
+            <use href="#stroke-shape-render-207-e08b2a8a-90c0-80a6-8004-34c29e5637c7-0">
+            </use>
+          </clipPath>
+          <path d="M174.634,287.890L433.090,313.611L921.332,479.082C1020.706,523.326,1072.680,623.719,1037.324,703.130L1037.324,703.130C1001.968,782.542,892.584,811.093,793.209,766.849L337.887,437.414L176.997,285.845L174.634,287.890Z" style="fill:none;fill-opacity:none;stroke-width:2;stroke:#000000;stroke-opacity:1" id="stroke-shape-render-207-e08b2a8a-90c0-80a6-8004-34c29e5637c7-0">
+          </path>
+        </defs>
+        <use href="#stroke-shape-render-207-e08b2a8a-90c0-80a6-8004-34c29e5637c7-0" clip-path="url(&#x27;#inner-stroke-render-207-e08b2a8a-90c0-80a6-8004-34c29e5637c7-0&#x27;)">
+        </use>
+      </g>
+    </g>
+  </g>
+</svg>

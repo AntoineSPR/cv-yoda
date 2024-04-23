@@ -27,13 +27,30 @@
     font-size: 1.8em;
 }
 
-.picture img {
+.picture {
+    position: relative;
+}
+
+
+.picture img:nth-child(2) {
+    position: inherit;
+    z-index: 1;
     display: block;
     width: 280px;
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-  }
+    box-shadow: 0px 0px 10px 10px #4a2100;
+}
+
+.meteor {
+    position: absolute;
+    z-index: 0;
+    height: 70rem;
+    width: 70rem;
+    margin-top: -34.063rem;
+    margin-left: -43.438rem;
+}
 
 nav {
     z-index: 100;
@@ -44,7 +61,7 @@ nav > img {
     z-index: 101;
 }
 
-nav div {
+nav a {
     width: 422px;
     height: 82px;
     background: #000000;
@@ -58,9 +75,10 @@ nav div {
     padding-left: 10px;
     transition: .2s ease;
     z-index: 101;
+    text-decoration: none;
 }
 
-nav div:hover {
+nav a:hover {
     right: 0px;
 }
 
@@ -84,12 +102,13 @@ nav div:hover {
     top: 335px;
 }
 
-nav div p {
+nav a p {
     font-size: 3em;
     align-self: center;
     padding-right: 10px;
     color: var(--color-primary);
     opacity: 0.9;
+    text-decoration: none;
 }
 
 #checkbox-menu{
