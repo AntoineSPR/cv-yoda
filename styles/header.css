@@ -122,7 +122,7 @@ nav a p {
 }
 
 @media screen and (max-width: 768px) {
-    nav div{
+    nav a{
         width: 280px;
         height: 8px;
         background: #55AA3A;
@@ -136,11 +136,11 @@ nav a p {
         right:-100%;
     }
 
-    nav div img {
+    nav a img {
         display: none;
     }
 
-    nav div p {
+    nav a p {
         background-color: black;
         color: var(--text-color);
         width: 212px;
@@ -177,7 +177,7 @@ nav a p {
         opacity: 0;
     }
 
-    #checkbox-menu:checked ~ nav div{
+    #checkbox-menu:checked ~ nav a{
         right: 0;
     }
 
