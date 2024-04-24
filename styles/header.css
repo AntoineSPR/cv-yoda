@@ -232,7 +232,7 @@ nav>a>p {
     height: 125px;
     background: #000000;
     /* border-radius: 50%; */
-    border-radius: 0 0 0 125px;
+    border-radius: 0 0 0 100%;
     box-shadow: 0px 0px 10px 4px #ff7100;
     transition: width 0.3s, height 0.3s;
   }
@@ -240,6 +240,6 @@ nav>a>p {
   #checkbox-menu:checked~.black-sun {
     width: 600px;
     height: 600px;
-    border-radius: 0 0 0 600px;
+    border-radius: 0 0 0 100%;
   }
 }
