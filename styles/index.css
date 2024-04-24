@@ -57,8 +57,7 @@ footer > div > q {
   border: 2px solid var(--color-primary);
   font-size: clamp(2.5rem, 5vw, 3rem);
   border-radius: 3rem;
-  padding: 
-  0.5rem clamp(1rem, 5vw, 2.5rem);
+  padding: 0.5rem clamp(1rem, 5vw, 2.5rem);
   background-color: #000000;
 }
 
@@ -68,8 +67,12 @@ footer > div > q {
 }
 
 @media screen and (max-width: 785px) {
-main > div,
-footer > div{
-  background: transparent;
-}
+  main {
+    width: 100vw;
+  }
+
+  main > div,
+  footer > div {
+    background: transparent;
+  }
 }
