@@ -45,7 +45,7 @@
   box-shadow: 0px 0px 10px 10px #4a2100;
 }
 
-.meteor {
+.picture img:first-child {
   position: absolute;
   z-index: 0;
   height: 70rem;
