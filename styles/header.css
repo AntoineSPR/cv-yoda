@@ -12,6 +12,19 @@
   padding: 0px 100px;
 }
 
+.introduction h1, 
+.introduction h2, 
+.introduction p {
+  background: none;
+}
+
+.introduction > * > span {
+  display: inline-block;
+  text-shadow: 0 0 4px orange;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+}
+
 .introduction h1 {
   font-size: 4em;
   font-weight: 400;
