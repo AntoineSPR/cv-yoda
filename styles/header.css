@@ -1,217 +1,222 @@
 .profile {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70vw;
-    margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  margin: 100px auto;
 }
 
 .introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 100px;
 }
 
 .introduction h1 {
-    font-size: 4em;
-    font-weight: 400;
+  font-size: 4em;
+  font-weight: 400;
+  padding: 2rem 0;
 }
 
 .introduction h2 {
-    font-size: 2em;
-    font-weight: 400;
-    margin-bottom: 70px;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 2rem 0;
 }
 
 .introduction p {
-    font-size: 1.8em;
+  width: 100%;
+  font-size: 1.8em;
 }
 
 .picture {
-    position: relative;
+  position: relative;
 }
 
-
 .picture img:nth-child(2) {
-    position: inherit;
-    z-index: 1;
-    display: block;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px 10px #4a2100;
+  position: inherit;
+  z-index: 1;
+  display: block;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px 10px #4a2100;
 }
 
 .meteor {
-    position: absolute;
-    z-index: 0;
-    height: 70rem;
-    width: 70rem;
-    margin-top: -34.063rem;
-    margin-left: -43.438rem;
+  position: absolute;
+  z-index: 0;
+  height: 70rem;
+  width: 70rem;
+  margin-top: -34.063rem;
+  margin-left: -43.438rem;
 }
 
 nav {
-    z-index: 100;
+  z-index: 100;
 }
 
 nav > img {
-    display: none;
-    z-index: 101;
+  display: none;
+  z-index: 101;
 }
 
-nav a {
-    width: 422px;
-    height: 82px;
-    background: #000000;
-    border: 1px solid #000000;
-    border-radius: 100px 0px 0px 100px;
-    box-shadow: 0px 0px 10px 4px var(--color-primary);
-    position: absolute;
-    right: -330px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    transition: .2s ease;
-    z-index: 101;
-    text-decoration: none;
+nav > a {
+  width: 422px;
+  height: 82px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 100px 0px 0px 100px;
+  box-shadow: 0px 0px 10px 4px var(--color-primary);
+  position: absolute;
+  right: -330px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  transition: 0.2s ease;
+  z-index: 101;
+  text-decoration: none;
 }
 
-nav a:hover {
-    right: 0px;
+nav > a:hover {
+  right: 0px;
 }
 
 .button-experience {
-    top: 20px;
+  top: 20px;
 }
 
 .button-experience img {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .button-skills {
-    top: 125px;
+  top: 125px;
 }
 
 .button-education {
-    top: 230px;
+  top: 230px;
 }
 
 .button-contact {
-    top: 335px;
+  top: 335px;
 }
 
-nav a p {
-    font-size: 3em;
-    align-self: center;
-    padding-right: 10px;
-    color: var(--color-primary);
-    opacity: 0.9;
-    text-decoration: none;
+nav > a > p {
+  font-size: 3em;
+  align-self: center;
+  padding-right: 10px;
+  color: var(--color-primary);
+  opacity: 0.9;
+  text-decoration: none;
 }
 
-#checkbox-menu{
-    display: none;
-    z-index: 102;
-} 
+#checkbox-menu {
+  display: none;
+  z-index: 102;
+}
 
 .black-sun {
-    display: none;
-    z-index: 100;
+  display: none;
+  z-index: 100;
 }
 
 @media screen and (max-width: 768px) {
-    nav a{
-        width: 280px;
-        height: 8px;
-        background: #55AA3A;
-        border-radius: 4px 0px 0px 4px;
-        border: none;
-        right: 0px;
-        padding-left: 10px;
-        transition: .3s ease;
-        box-shadow: 0px 0px 15px #55AA3A;
-        margin-top: 110px;
-        right:-100%;
-    }
+  nav > a {
+    width: 280px;
+    height: 8px;
+    background: #55aa3a;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    right: 0px;
+    padding-left: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 15px #55aa3a;
+    margin-top: 110px;
+    right: -100%;
+  }
 
-    nav a img {
-        display: none;
-    }
+  nav > a > img {
+    display: none;
+  }
 
-    nav a p {
-        background-color: black;
-        color: var(--text-color);
-        width: 212px;
-        height: 24px;
-        border-radius: 32px;
-        border : 2px solid #009e27;
-        font-size: 2em;
-        margin: 0px;
-        padding: 0px 5px 15px 5px;
-        text-align: center;
-        opacity: 1;
-    }
+  nav > a > p {
+    background-color: black;
+    color: var(--text-color);
+    width: 212px;
+    height: 24px;
+    border-radius: 32px;
+    border: 2px solid #009e27;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px 5px 15px 5px;
+    text-align: center;
+    opacity: 1;
+  }
 
-    nav > img {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100px;
-        height: auto;
-    }
+  nav > img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+  }
 
-    nav {
-        transition: .2s ease;
-    }
+  nav {
+    transition: 0.2s ease;
+  }
 
-    #checkbox-menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100px;
-        height: 100px;
-        opacity: 0;
-    }
+  #checkbox-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
 
-    #checkbox-menu:checked ~ nav a{
-        right: 0;
-    }
+  #checkbox-menu:checked ~ nav a {
+    right: 0;
+  }
 
-    .black-sun {
-        display: block;
-        position: absolute; 
-        top: 0;
-        right: 0;
-        transform: translate(50%, -50%);
-        width: 250px;
-        height: 250px;
-        background: #000000;
-        border-radius: 50%;
-        box-shadow: 0px 0px 10px 4px #FF7100;
-        transition: width 0.3s, height 0.3s;
-    }
+  .black-sun {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: #000000;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 4px #ff7100;
+    transition: width 0.3s, height 0.3s;
+  }
 
-    #checkbox-menu:checked ~ .black-sun {
-        width: 1200px;
-        height: 1200px;
-    }
+  #checkbox-menu:checked ~ .black-sun {
+    width: 1200px;
+    height: 1200px;
+  }
 
-    .profile {
-        flex-direction: column;
-        width: 90vw;
-        align-items: center;
-    }
+  .profile {
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+  }
 
-    .introduction {
-        align-items: center;
-        padding: 0px 20px;
-    }
+  .introduction {
+    align-items: center;
+    padding: 0px 20px;
+  }
 
-    .introduction p {
-        text-align: center;
-    }
+  .introduction h2 {
+    text-align: center;
+  }
+  .introduction p {
+    text-align: center;
+  }
 }

@@ -121,6 +121,7 @@
 
 .skills__desktop div:nth-child(6) {
   grid-column-start: 5;
+  margin: 4rem 0 0 2rem;
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
@@ -134,7 +135,7 @@
   height: 17.5rem;
   width: 17.5rem;
   transition: 1s ease;
-  z-index: 2;
+  z-index: 2; 
 }
 
 .skills__desktop > div:hover > p {
@@ -144,7 +145,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 786px) {
   .skills__desktop {
     display: grid;
     grid-template-columns: repeat(4, 10rem);
