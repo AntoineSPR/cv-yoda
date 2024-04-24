@@ -26,6 +26,13 @@
     <header>
       <section class="profile">
         <div class="picture">
+          <img
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 580 580"
+            width="100%"
+            height="100%"
+            src="media/meteor.svg"
+          />
           <img src="media/Yoda-Retina_2a7ecc26.jpeg" />
         </div>
         <div class="introduction">
@@ -40,32 +47,33 @@
 
       <nav>
         <img src="media/menu(1).png" />
-        <div class="button-experience">
+        <a href="#experience" class="button-experience">
           <img src="media/saturn.png" />
           <p>Expérience</p>
-        </div>
-        <div class="button-skills">
+        </a>
+        <a href="#skills" class="button-skills">
           <img src="media/astrological.png" />
           <p>Compétences</p>
-        </div>
-        <div class="button-education">
+        </a>
+        <a href="#education" class="button-education">
           <img src="media/emblem.png" />
           <p>Formation</p>
-        </div>
-        <div class="button-contact">
+        </a>
+        <a href="#contact" class="button-contact">
           <img src="media/shooting-star(1).png" />
           <p>Contact</p>
-        </div>
+        </a>
       </nav>
     </header>
     <main>
-      <div><p>OBJECTIFS</p></div>
+      <div id="objective"><p>OBJECTIFS</p></div>
       <section class="objective">
         <p>Former les futurs JEDI à la sagesse de la Force.</p>
         <p>Sélectionner l'élu parmi eux pour vaincre l'armée de l'Empire.</p>
         <p>Cours Magistraux à l'Université Supérieure des JEDI.</p>
       </section>
-      <div><p>EXPERIENCES</p></div>
+
+      <div id="experience"><p>EXPERIENCES</p></div>
       <section class="experience">
         <div class="card-container">
           <div class="card">
@@ -95,7 +103,8 @@
           </div>
         </div>
       </section>
-      <div><p>COMPETENCES</p></div>
+
+      <div id="skills"><p>COMPETENCES</p></div>
       <!--DESKTOP-->
       <section class="skills__desktop">
         <div>
@@ -139,7 +148,7 @@
         </div>
       </section>
 
-      <div><p>FORMATION</p></div>
+      <div id="education"><p>FORMATION</p></div>
       <section class="education">
         <div class="card-container">
           <div class="card">
@@ -176,7 +185,7 @@
         </div>
       </section>
 
-      <div><p>CONTACT</p></div>
+      <div id="contact"><p>CONTACT</p></div>
       <section class="contact">
         <div>
           <p>
