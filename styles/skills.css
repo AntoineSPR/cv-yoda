@@ -91,6 +91,7 @@
   border-radius: 50%;
   animation-name: orange-yellow;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
   background-color: #fff347;
   z-index: 1;
 }
