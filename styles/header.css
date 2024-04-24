@@ -12,13 +12,13 @@
   padding: 0px 100px;
 }
 
-.introduction h1, 
-.introduction h2, 
+.introduction h1,
+.introduction h2,
 .introduction p {
   background: none;
 }
 
-.introduction > * > span {
+.introduction>*>span {
   display: inline-block;
   text-shadow: 0 0 4px orange;
   background-color: rgba(0, 0, 0, 0.75);
@@ -69,14 +69,15 @@
 
 nav {
   z-index: 100;
+  overflow-x: hidden;
 }
 
-nav > img {
+nav>img {
   display: none;
   z-index: 101;
 }
 
-nav > a {
+nav>a {
   width: 422px;
   height: 82px;
   background: #000000;
@@ -93,7 +94,7 @@ nav > a {
   text-decoration: none;
 }
 
-nav > a:hover {
+nav>a:hover {
   right: 0px;
 }
 
@@ -117,7 +118,7 @@ nav > a:hover {
   top: 335px;
 }
 
-nav > a > p {
+nav>a>p {
   font-size: 3em;
   align-self: center;
   padding-right: 10px;
@@ -137,25 +138,49 @@ nav > a > p {
 }
 
 @media screen and (max-width: 768px) {
-  nav > a {
+  .profile {
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+  }
+
+  .introduction {
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .introduction h2 {
+    text-align: center;
+  }
+
+  .introduction p {
+    text-align: center;
+  }
+
+  .picture img:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav>a {
+    position: fixed;
     width: 280px;
     height: 8px;
     background: #55aa3a;
     border-radius: 4px 0px 0px 4px;
     border: none;
-    right: 0px;
     padding-left: 10px;
     transition: 0.3s ease;
     box-shadow: 0px 0px 15px #55aa3a;
     margin-top: 110px;
-    right: -100%;
   }
 
-  nav > a > img {
+  nav>a>img {
     display: none;
   }
 
-  nav > a > p {
+  nav>a>p {
     background-color: black;
     color: var(--text-color);
     width: 212px;
@@ -169,7 +194,7 @@ nav > a > p {
     opacity: 1;
   }
 
-  nav > img {
+  nav>img {
     display: block;
     position: absolute;
     top: 0;
@@ -192,8 +217,9 @@ nav > a > p {
     opacity: 0;
   }
 
-  #checkbox-menu:checked ~ nav a {
+  #checkbox-menu:checked~nav a {
     right: 0;
+    position: absolute;
   }
 
   .black-sun {
@@ -201,35 +227,18 @@ nav > a > p {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%, -50%);
-    width: 250px;
-    height: 250px;
+    /* transform: translate(50%, -50%); */
+    width: 125px;
+    height: 125px;
     background: #000000;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 0 0 0 125px;
     box-shadow: 0px 0px 10px 4px #ff7100;
     transition: width 0.3s, height 0.3s;
   }
 
-  #checkbox-menu:checked ~ .black-sun {
-    width: 1200px;
-    height: 1200px;
-  }
-
-  .profile {
-    flex-direction: column;
-    width: 90vw;
-    align-items: center;
-  }
-
-  .introduction {
-    align-items: center;
-    padding: 0px 20px;
-  }
-
-  .introduction h2 {
-    text-align: center;
-  }
-  .introduction p {
-    text-align: center;
+  #checkbox-menu:checked~.black-sun {
+    width: 600px;
+    height: 600px;
   }
 }
