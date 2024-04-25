@@ -20,7 +20,7 @@ q {
   gap: 8rem;
   height: 100vh;
   width: 100%;
-  background-image: url("/webroot/media/starry-background.gif");
+  background-image: url("../media/starry-background.gif");
   color: var(--text-color);
   font-family: "Oxanium", sans-serif;
 }
