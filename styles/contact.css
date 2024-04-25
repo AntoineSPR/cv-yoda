@@ -1,4 +1,4 @@
-.contact {
+.contact-details {
   align-self: space-around;
   display: flex;
   flex-direction: row;
@@ -7,36 +7,97 @@
   gap: 4rem;
 }
 
-.contact > div {
+.contact-details > div {
   width: fit-content;
 }
 
-.contact div > p {
-    margin-bottom: 2rem;
+.contact-details div > p {
+  margin-bottom: 2rem;
 }
 
-.contact > div > p > a {
+.contact-details > div > p > a {
   font-size: clamp(1rem, 4.5vw, 2rem);
   text-decoration: none;
   color: var(--text-color);
 }
 
-.contact > div > p:hover > a {
+.contact-details > div > p:hover > a {
   color: var(--color-primary);
 }
 
-.contact > div > p > a > i {
+.contact-details > div > p > a > i {
   margin-right: clamp(1rem, 5vw, 2rem);
   height: 1rem;
   width: 1rem;
 }
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact form p {
+  align-self: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 4.5vw, 2rem);
+}
+
+.contact form div {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+}
+
+.contact form div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  padding-bottom: 4rem;
+}
+
+.contact form div label {
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+.contact form div input,
+.contact form div select,
+.contact form div textarea {
+  width: 16rem;
+  box-shadow: inset -8px 0 16px #fff34787;
+  font-family: "Oxanium", sans-serif;
+}
+
+.contact form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
+  height: 2.8rem;
+  background-color: var(--color-primary);
+  color: var(--text-color);
+  font-family: "Oxanium", sans-serif;
+  font-size: clamp(1rem, 4.5vw, 2rem);
+  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+  -moz-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+  -o-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+  -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+  transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+  border-radius: 5px 5px 0 0;
+  outline: 1px solid transparent;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
-  .contact {
+  .contact-details {
     flex-wrap: wrap;
     gap: 0;
   }
-  .contact > div {
+  .contact-details > div {
     width: 100%;
   }
 }

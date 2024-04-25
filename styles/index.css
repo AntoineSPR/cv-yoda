@@ -1,12 +1,14 @@
+:root {
+  --color-primary: #ff7100;
+  --text-color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  --color-primary: #ff7100;
-  --text-color: white;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +33,7 @@ section {
 }
 
 p,
+label,
 h1,
 h2,
 h3 {
