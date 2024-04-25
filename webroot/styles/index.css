@@ -72,21 +72,6 @@ footer > div > q {
   text-align: center;
 }
 
-footer a:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-footer img {
-  height: 70px;
-  width: auto;
-  border-radius: 50%;
-  box-shadow: 0 0 2px var(--color-primary);
-  background-color: var(--color-primary);
-}
-
 @media screen and (max-width: 768px) {
   main {
     width: 90%;
