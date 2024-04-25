@@ -65,6 +65,7 @@ function getYodaIntroPhrase($section)
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/69553e1ade.js" crossorigin="anonymous"></script>
     <title>Confirmation</title>
 </head>
 
@@ -75,9 +76,9 @@ function getYodaIntroPhrase($section)
         <h1><q><?php echo $yodaAnswer ?></q></h1>
         <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
     </div>
-    <section class="contact-details">
     <p>Pour plus de conseils, prendre rendez-vous avec Yoda, tu peux</p>
-        <p>100€ la consultation de 30 minutes</p>
+    <p>100€ la consultation de 30 minutes</p>
+    <section class="contact-details">
             <div>
                 <p>
                     <a href="https://www.linkedin.com/in/ma%C3%AEtre-yoda-999463131/?originalSubdomain=fr"
