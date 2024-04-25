@@ -79,11 +79,11 @@ footer a {
 }
 
 footer img {
-    height: 70px;
-    width: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 2px var(--color-primary);
-    background-color: var(--color-primary);
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 2px var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 @media screen and (max-width: 768px) {
@@ -98,8 +98,11 @@ footer img {
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  body {
     margin-left: 16rem;
+  }
+  
+  main {
     width: 100%;
   }
 }
