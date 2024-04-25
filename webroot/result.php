@@ -74,9 +74,10 @@ function getYodaIntroPhrase($section)
         <h2> <?php echo getYodaIntroPhrase($section) ?>, je partage :</h2>
         <h1><q><?php echo $yodaAnswer ?></q></h1>
         <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
-        <p>Pour plus de conseils, prendre rendez-vous avec Yoda, tu peux</p>
+    </div>
+    <section class="contact-details">
+    <p>Pour plus de conseils, prendre rendez-vous avec Yoda, tu peux</p>
         <p>100€ la consultation de 30 minutes</p>
-        <section class="contact-details">
             <div>
                 <p>
                     <a href="https://www.linkedin.com/in/ma%C3%AEtre-yoda-999463131/?originalSubdomain=fr"
@@ -96,5 +97,4 @@ function getYodaIntroPhrase($section)
                 </p>
             </div>
         </section>
-    </div>
 </body>

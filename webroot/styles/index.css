@@ -22,7 +22,8 @@ body {
   overflow-x: hidden;
 }
 
-main {
+main,
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -18,7 +18,7 @@ q {
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url("../media/starry-background.gif");
   color: var(--text-color);
