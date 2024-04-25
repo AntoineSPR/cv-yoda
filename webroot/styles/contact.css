@@ -73,22 +73,16 @@
 }
 
 .contact form button {
+  align-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 4rem;
-  height: 2.8rem;
-  background-color: var(--color-primary);
-  color: var(--text-color);
-  font-family: "Oxanium", sans-serif;
-  font-size: clamp(1rem, 4.5vw, 2rem);
-  -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-  -moz-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-  -o-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-  -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-  transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-  border-radius: 5px 5px 0 0;
-  outline: 1px solid transparent;
+  width: 50%;
+  border: 2px solid var(--color-primary);
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  border-radius: 3rem;
+  padding: 0.5rem clamp(1rem, 5vw, 2.5rem);
+  background-color: #000000;
   cursor: pointer;
 }
 
