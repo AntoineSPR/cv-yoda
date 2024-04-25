@@ -99,6 +99,7 @@ footer img {
 
 @media screen and (max-width: 768px) {
   main {
+    margin-left: 4rem;
     width: 100%;
   }
 }
