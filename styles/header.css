@@ -263,3 +263,19 @@ nav>a>p {
     border-radius: 0 0 0 100%;
   }
 }
+
+@media screen and (max-width: 425px) {
+    .black-sun {
+      width: 75px;
+      height: 75px;
+    }
+
+    nav>img {
+      width: 60px;
+    }
+
+    #checkbox-menu {
+      width: 65px;
+      height: 65px;
+    }
+}
