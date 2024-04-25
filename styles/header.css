@@ -163,9 +163,7 @@ nav>a>p {
   .picture img:nth-child(2) {
     box-shadow: 0px 0px 12px 6px var(--color-primary);
   }
-}
 
-@media screen and (max-width: 425px) {
   nav>a {
     position: fixed;
     width: 280px;
