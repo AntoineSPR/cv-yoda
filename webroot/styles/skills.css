@@ -74,6 +74,10 @@
   background: none;
 }
 
+.skills__desktop > div:nth-child(3) > p {
+  font-size: 2.4rem;
+}
+
 .skills__desktop div:first-child {
   grid-column-start: 1;
   height: 11rem;
