@@ -20,7 +20,7 @@
 
 .introduction>*>span {
   display: inline-block;
-  text-shadow: 0 0 4px orange;
+  text-shadow: 0 0 4px var(--color-primary);
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
 }
@@ -159,6 +159,10 @@ nav>a>p {
 
   .picture img:first-child {
     display: none;
+  }
+
+  .picture img:nth-child(2) {
+    box-shadow: 0px 0px 10px 10px var(--color-primary);
   }
 }
 
