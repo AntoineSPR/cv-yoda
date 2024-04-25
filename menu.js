@@ -6,6 +6,10 @@ checkbox.addEventListener("change", () => {
         menuLink.forEach(link => {
             link.style.right = "0px";
         });
+    } else {
+        menuLink.forEach(link => {
+            link.style.right = "-330px";
+        });
     }
 });
 
