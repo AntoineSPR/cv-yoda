@@ -1,8 +1,21 @@
 let menuLink = document.querySelectorAll("nav a");
 let checkbox = document.getElementById("checkbox-menu");
+let overlay = document.getElementById("overlay");
 
+// Check if the screen is in mobile mode (warning: only checks once when the DOM is loaded)
 function isMobile() {
     return window.matchMedia('(max-width: 768px)').matches;
+}
+
+// Collapse the whole menu
+function collapse(element) {
+    element.addEventListener("click", () => {
+        checkbox.checked = false;
+        overlay.style.display = "none";
+        menuLink.forEach(link => {
+            link.style.right = "-330px";
+        });
+    });
 }
 
 if (isMobile()) {
@@ -11,20 +24,15 @@ if (isMobile()) {
             menuLink.forEach(link => {
                 link.style.right = "0px";
             });
+            overlay.style.display = "block";
         } else {
             menuLink.forEach(link => {
                 link.style.right = "-330px";
             });
+            overlay.style.display = "none";
         }
     });
     
-    menuLink.forEach(link => {
-        link.addEventListener("click", () => {
-            checkbox.checked = false;
-            menuLink.forEach(link => {
-                link.style.right = "-330px";
-            });
-        });
-    });
+    menuLink.forEach(link => collapse(link));
+    collapse(overlay);
 }
-
