@@ -63,7 +63,6 @@
   display: grid;
   grid-template-columns: repeat(4, 12rem);
   grid-template-rows: 16rem;
-  margin-left: 2rem;
 }
 
 .skills__desktop > div > p {
@@ -121,7 +120,7 @@
   animation-duration: 8s;
   animation-iteration-count: infinite;
   border-radius: 50%;
-  filter: blur(12px);
+  filter: blur(0.75rem);
   z-index: 0;
 }
 
@@ -228,7 +227,6 @@
   }
 
   .skills__mobile > div:nth-child(3) > div {
-    border-radius: 50%;
     animation-name: yellow-planet;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -237,7 +235,6 @@
   }
 
   .skills__mobile > div:nth-child(4) > div {
-    border-radius: 50%;
     animation-name: blue-planet;
     animation-duration: 8s;
     animation-iteration-count: infinite;
