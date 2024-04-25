@@ -1,0 +1,82 @@
+:root {
+  --color-primary: #ff7100;
+  --text-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  background-image: url("../media/starry-background.gif");
+  color: var(--text-color);
+  font-family: "Oxanium", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+section {
+  margin-bottom: 96px;
+}
+
+p,
+label,
+h1,
+h2,
+h3 {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10%;
+}
+
+main > div,
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0.5rem;
+  background: var(--color-primary);
+  border-radius: 0.25rem;
+  border: none;
+  margin: 4rem 0;
+}
+
+main > div > p,
+footer > div > q {
+  width: auto;
+  border: 2px solid var(--color-primary);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  border-radius: 3rem;
+  padding: 0.5rem clamp(1rem, 5vw, 2.5rem);
+  background-color: #000000;
+}
+
+footer > div > q {
+  font-size: clamp(0.8rem, 4vw, 1.8rem);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
+  main > div,
+  footer > div {
+    background: transparent;
+  }
+}
