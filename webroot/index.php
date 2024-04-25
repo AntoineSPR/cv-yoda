@@ -194,7 +194,7 @@
           <select for="reason" name="reason" size="1" required="true">
             <?php require 'reasons.php'; ?>
             <?php foreach ($reasons as $key => $reason): ?>
-              <option selected="selected" value="<?php $key ?>"><?= $reason ?>
+              <option selected="selected" value="<?php $key ?>"><?= $key ?>
               </option>
             <?php endforeach ?>
           </select>
