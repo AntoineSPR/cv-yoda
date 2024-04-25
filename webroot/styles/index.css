@@ -72,7 +72,7 @@ footer > div > q {
   text-align: center;
 }
 
-footer a {
+footer a:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
