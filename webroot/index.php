@@ -62,8 +62,8 @@
         </nav>
     </header>
     <main>
-        <div id="objective">
-            <p>OBJECTIFS</p>
+        <div>
+            <p id="objective">OBJECTIFS</p>
         </div>
         <section class="objective">
             <p>Fonder un nouvel ordre Jedi je dois.</p>
@@ -71,8 +71,8 @@
             <p>À éveiller les jeunes générations à la Force je veux oeuvrer.</p>
         </section>
 
-        <div id="experience">
-            <p>EXPERIENCES</p>
+        <div>
+            <p id="experience">EXPERIENCES</p>
         </div>
         <section class="experience">
             <div class="card-container">
@@ -104,8 +104,8 @@
             </div>
         </section>
 
-        <div id="skills">
-            <p>COMPETENCES</p>
+        <div>
+            <p id="skills">COMPETENCES</p>
         </div>
         <!--DESKTOP-->
         <section class="skills__desktop">
@@ -150,8 +150,8 @@
             </div>
         </section>
 
-        <div id="education">
-            <p>FORMATION</p>
+        <div>
+            <p id="education">FORMATION</p>
         </div>
         <section class="education">
             <div class="card-container">
@@ -183,8 +183,8 @@
             </div>
         </section>
 
-        <div id="contact">
-            <p>CONTACT</p>
+        <div>
+            <p id="contact">CONTACT</p>
         </div>
         <section class="contact">
             <form action="result.php" method="post">
@@ -239,6 +239,7 @@
         <div>
             <q>Robuste je suis grâce à la Force, mais pas à ce point-là.</q>
         </div>
+        <a href="#"><img src="media/backtotop.png" alt="back to top" /></a>
         <p>Fait avec ❤️ par <a href="https://github.com/AnnaGosme">Anna</a> & <a
                 href="https://github.com/AntoineSPR">Antoine</a></p>
     </footer>

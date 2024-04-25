@@ -67,6 +67,21 @@ footer > div > q {
   background-color: #000000;
 }
 
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer img {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 2px var(--color-primary);
+    background-color: var(--color-primary);
+}
+
 footer > div > q {
   font-size: clamp(0.8rem, 4vw, 1.8rem);
   text-align: center;
