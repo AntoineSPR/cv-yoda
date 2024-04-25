@@ -1,0 +1,39 @@
+:root {
+    --color-primary: #ff7100;
+    --text-color: white;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../media/planet-explosion.gif");
+    background-size: cover;
+    color:var(--text-color);
+    font-family: "Oxanium", sans-serif;
+}
+
+h1, h2, p, a {
+    background-color: #400000;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4rem;
+    height: 2.8rem;
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    font-family: "Oxanium", sans-serif;
+    font-size: clamp(1rem, 4.5vw, 2rem);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    -moz-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    -o-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
+    border-radius: 5px 5px 0 0;
+    outline: 1px solid transparent;
+    cursor: pointer;
+  }

@@ -1,41 +1,56 @@
-@keyframes orange-orange {
-  from {
-    background-color: #c55800;
+@keyframes purple-planet {
+  0% {
+    background-color: #33007b;
   }
-  to {
-    background-color: #ff7100;
+  50% {
+    background-color: #ab00ff;
   }
-}
-@keyframes orange-green {
-  from {
-    background-color: #c55800;
-  }
-  to {
-    background-color: #54a93a;
+  100% {
+    background-color: #33007b;
   }
 }
-@keyframes orange-yellow {
-  from {
+@keyframes red-planet {
+  0% {
+    background-color: #400000;
+  }
+  50% {
+    background-color: #ff0000;
+  }
+  100% {
+    background-color: #400000;
+  }
+}
+@keyframes yellow-planet {
+  0% {
     background-color: #ff7100;
   }
-  to {
+  50% {
     background-color: #fff347;
   }
-}
-@keyframes orange-blue {
-  from {
+  100% {
     background-color: #ff7100;
   }
-  to {
+}
+@keyframes blue-planet {
+  0% {
+    background-color: #1b2d48;
+  }
+  50% {
     background-color: #84c8fc;
   }
-}
-@keyframes orange-lightgreen {
-  from {
-    background-color: #ff7100;
+  100% {
+    background-color: #1b2d48;
   }
-  to {
-    background-color: #679951;
+}
+@keyframes green-planet {
+  0% {
+    background-color: #063b00;
+  }
+  50% {
+    background-color: #0eff00;
+  }
+  100% {
+    background-color: #063b00;
   }
 }
 
@@ -65,10 +80,10 @@
   height: 11rem;
   width: 11rem;
   border-radius: 50%;
-  background-color: #ff7100;
   box-shadow: inset -8px 0 16px #fff34787;
-  animation-name: orange-orange;
+  animation-name: purple-planet;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .skills__desktop div:nth-child(2) {
@@ -77,10 +92,10 @@
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background-color: #54a93a;
   box-shadow: inset -4px 0 8px #fff347e3;
-  animation-name: orange-green;
+  animation-name: red-planet;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .skills__desktop div:nth-child(3) {
@@ -90,10 +105,9 @@
   width: 12rem;
   margin-left: -8rem;
   border-radius: 50%;
-  animation-name: orange-yellow;
+  animation-name: yellow-planet;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  background-color: #fff347;
   z-index: 1;
 }
 
@@ -103,41 +117,45 @@
   height: 13.5rem;
   width: 13.5rem;
   margin-left: -8rem;
-  background-color: #ffcf47;
+  animation-name: yellow-planet;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
   border-radius: 50%;
-  filter: blur(12px);
+  filter: blur(0.75rem);
   z-index: 0;
 }
 
 .skills__desktop div:nth-child(5) {
   grid-column-start: 4;
-  margin: 4rem 0 0 2rem;
+  grid-row-start: 1;
+  margin: 8rem 0 0 2rem;
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
-  background-color: #84c8fc;
   box-shadow: inset 16px 0 16px #fff34787;
-  animation-name: orange-blue;
+  animation-name: blue-planet;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .skills__desktop div:nth-child(6) {
-  grid-column-start: 5;
-  margin: 4rem 0 0 2rem;
+  grid-column-start: 4;
+  grid-row-start: 1;
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  background-color: #679951;
   box-shadow: inset 16px -4px 16px #fff34787;
-  animation-name: orange-lightgreen;
+  animation-name: green-planet;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .skills__desktop > div:hover {
   height: 17.5rem;
   width: 17.5rem;
   transition: 1s ease;
-  z-index: 2; 
+  z-index: 2;
+  cursor: pointer;
 }
 
 .skills__desktop > div:hover > p {
@@ -198,36 +216,34 @@
   }
 
   .skills__mobile > div:first-child > div {
-    background-color: #ff7100;
-    animation-name: orange-orange;
+    animation-name: purple-planet;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
 
   .skills__mobile > div:nth-child(2) > div {
-    background-color: #54a93a;
-    animation-name: orange-green;
+    animation-name: red-planet;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
 
   .skills__mobile > div:nth-child(3) > div {
-    border-radius: 50%;
-    animation-name: orange-yellow;
+    animation-name: yellow-planet;
     animation-duration: 8s;
-    background-color: #fff347;
+    animation-iteration-count: infinite;
     z-index: 1;
     position: relative;
   }
 
   .skills__mobile > div:nth-child(4) > div {
-    border-radius: 50%;
-    background-color: #84c8fc;
-    animation-name: fourth-planet;
+    animation-name: blue-planet;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
 
   .skills__mobile > div:nth-child(5) > div {
-    background-color: #679951;
-    animation-name: fifth-planet;
+    animation-name: green-planet;
     animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
 }

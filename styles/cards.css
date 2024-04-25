@@ -25,6 +25,7 @@
 
 .card-container:hover .card {
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .card-back {
