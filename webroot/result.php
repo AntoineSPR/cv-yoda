@@ -76,26 +76,28 @@ function getYodaIntroPhrase($section)
         <h1><q><?php echo $yodaAnswer ?></q></h1>
         <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
     </div>
-    <p>Pour plus de conseils, prendre rendez-vous avec Yoda, tu peux</p>
-    <p>100€ la consultation de 30 minutes</p>
+    <div>
+        <p>Pour plus de conseils, prendre rendez-vous avec Yoda, tu peux</p>
+        <p>100€ la consultation de 30 minutes</p>
+    </div>
     <section class="contact-details">
-            <div>
-                <p>
-                    <a href="https://www.linkedin.com/in/ma%C3%AEtre-yoda-999463131/?originalSubdomain=fr"
-                        target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/maitre-yoda</a>
-                </p>
-                <p>
-                    <a href="https://github.com/UtrechtUniversity/yoda" target="_blank"><i
-                            class="fa-brands fa-square-github"></i>https://github.com/MaitreYoda</a>
-                </p>
-            </div>
-            <div>
-                <p>
-                    <a href="mailto: yodathechef@gmail.com"><i class="fa-solid fa-envelope"></i>maitre-yoda@gmail.fr</a>
-                </p>
-                <p>
-                    <a href="tel:0978450438"><i class="fa-solid fa-square-phone"></i>09 78 45 04 38</a>
-                </p>
-            </div>
-        </section>
+        <div>
+            <p>
+                <a href="https://www.linkedin.com/in/ma%C3%AEtre-yoda-999463131/?originalSubdomain=fr"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/maitre-yoda</a>
+            </p>
+            <p>
+                <a href="https://github.com/UtrechtUniversity/yoda" target="_blank"><i
+                        class="fa-brands fa-square-github"></i>https://github.com/MaitreYoda</a>
+            </p>
+        </div>
+        <div>
+            <p>
+                <a href="mailto: yodathechef@gmail.com"><i class="fa-solid fa-envelope"></i>maitre-yoda@gmail.fr</a>
+            </p>
+            <p>
+                <a href="tel:0978450438"><i class="fa-solid fa-square-phone"></i>09 78 45 04 38</a>
+            </p>
+        </div>
+    </section>
 </body>
