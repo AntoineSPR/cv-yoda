@@ -207,7 +207,7 @@ nav>a>p {
 
   nav>img {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100px;
@@ -220,7 +220,7 @@ nav>a>p {
 
   #checkbox-menu {
     display: block;
-    position: absolute;
+    position: fixed; 
     top: 0;
     right: 0;
     width: 100px;
@@ -230,12 +230,12 @@ nav>a>p {
 
   #checkbox-menu:checked~nav a {
     right: 0;
-    position: absolute;
+    position: fixed;
   }
 
   .black-sun {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 125px;
