@@ -46,5 +46,5 @@ if (!empty($errors)) {
 
 <body>
     <h1>Pour votre message, je vous remercie. <br> Bientôt vous répondre, je vais.</h1>
-    <a href="http://localhost:8000">Je rejoins Yoda</a>
+    <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
 </body>
