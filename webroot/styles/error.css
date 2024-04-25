@@ -73,3 +73,9 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+@media screen and (max-width: 768px) {
+  .error > div {
+    padding: 1.5rem;
+  }
+}
