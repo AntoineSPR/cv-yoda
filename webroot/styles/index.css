@@ -67,7 +67,7 @@ footer > div > q {
   background-color: #000000;
 }
 
-footer a {
+footer a:first-child {
   display: flex;
   justify-content: center;
   align-items: center;

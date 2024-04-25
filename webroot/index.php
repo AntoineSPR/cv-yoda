@@ -32,9 +32,9 @@
                 <img src="media/Yoda-Retina_2a7ecc26.jpeg" />
             </div>
             <div class="introduction">
-                <h1>Yoda</h1>
-                <h2>Maître Jedi</h2>
-                <p>Trouver un travail je dois, la faute aux Sith c'est</p>
+                <h1><span>Yoda</span></h1>
+                <h2><span>Maître Jedi</span></h2>
+                <p><span>Trouver un travail je dois, la faute aux Sith c'est</span></p>
             </div>
         </section>
 
