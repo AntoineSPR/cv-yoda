@@ -69,7 +69,9 @@
 .contact form div textarea {
   width: 16rem;
   box-shadow: inset -8px 0 16px #fff34787;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .contact form button {
@@ -77,13 +79,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  border: 2px solid var(--color-primary);
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  width: 12rem;
+  font-family: var(--font-primary);
+  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
   border-radius: 3rem;
-  padding: 0.5rem clamp(1rem, 5vw, 2.5rem);
-  background-color: #000000;
+  padding: 0.5rem;
+  color: black;
+  border: 2px solid #ff8521;
+  background-color: var(--color-primary);
+  box-shadow: 0 9px #171717;
   cursor: pointer;
+}
+
+.contact form button:hover {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  border: 2px solid var(--color-primary);
+  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
+  border-radius: 3rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  background-color: #ce6005 ;
+}
+
+.contact form button:active {
+  color: var(--text-color);
+  background-color: #ce6005;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 @media screen and (max-width: 768px) {

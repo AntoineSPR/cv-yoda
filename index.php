@@ -5,17 +5,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="media/jedi-order.png">
-  <link rel="stylesheet" href="styles/header.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" href="styles/objectives.css" />
-  <link rel="stylesheet" href="styles/skills.css" />
-  <link rel="stylesheet" href="styles/cards.css" />
-  <link rel="stylesheet" href="styles/contact.css" />
-  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="icon" href="webroot/media/jedi-order.png">
+  <link rel="stylesheet" href="webroot/styles/header.css" />
+  <link rel="stylesheet" href="webroot/styles/index.css" />
+  <link rel="stylesheet" href="webroot/styles/objectives.css" />
+  <link rel="stylesheet" href="webroot/styles/skills.css" />
+  <link rel="stylesheet" href="webroot/styles/cards.css" />
+  <link rel="stylesheet" href="webroot/styles/contact.css" />
+  <link rel="stylesheet" href="webroot/styles/contact.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/69553e1ade.js" crossorigin="anonymous"></script>
   <title>Trouver un travail Yoda doit</title>
 </head>
@@ -25,8 +28,8 @@
     <section class="profile">
       <div class="picture">
         <img preserveAspectRatio="xMidYMid meet" viewBox="0 0 580 580" width="100%" height="100%"
-          src="media/meteor.svg" />
-        <img src="media/Yoda-Retina_2a7ecc26.jpeg" />
+          src="webroot/media/meteor.svg" />
+        <img src="webroot/media/Yoda-Retina_2a7ecc26.jpeg" />
       </div>
       <div class="introduction">
         <h1>Yoda</h1>
@@ -39,21 +42,21 @@
     <div class="black-sun"></div>
 
     <nav>
-      <img src="media/menu(1).png" />
+      <img src="webroot/media/menu(1).png" />
       <a href="#experience" class="button-experience">
-        <img src="media/saturn.png" />
+        <img src="webroot/media/saturn.png" />
         <p>Expérience</p>
       </a>
       <a href="#skills" class="button-skills">
-        <img src="media/astrological.png" />
+        <img src="webroot/media/astrological.png" />
         <p>Compétences</p>
       </a>
       <a href="#education" class="button-education">
-        <img src="media/emblem.png" />
+        <img src="webroot/media/emblem.png" />
         <p>Formation</p>
       </a>
       <a href="#contact" class="button-contact">
-        <img src="media/shooting-star(1).png" />
+        <img src="webroot/media/shooting-star(1).png" />
         <p>Contact</p>
       </a>
     </nav>
@@ -74,7 +77,7 @@
     <section class="experience">
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/yodacouncil.jpg" />
+          <img class="card-front" src="webroot/media/yodacouncil.jpg" />
           <div class="card-back">
             <h3>Maître au Conseil Jedi</h3>
             <p>Coruscant</p>
@@ -83,7 +86,7 @@
       </div>
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/555b40df69bedda148891f6e.webp" />
+          <img class="card-front" src="webroot/media/555b40df69bedda148891f6e.webp" />
           <div class="card-back">
             <h3>Général vétéran</h3>
             <p>Coruscant</p>
@@ -92,7 +95,7 @@
       </div>
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/yodaluke.jpg" />
+          <img class="card-front" src="webroot/media/yodaluke.jpg" />
           <div class="card-back">
             <h3>Professeur particulier</h3>
             <p>Dagoba</p>
@@ -153,7 +156,7 @@
     <section class="education">
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/A_Plot_to_Destroy_the_Jedi.webp" />
+          <img class="card-front" src="webroot/media/A_Plot_to_Destroy_the_Jedi.webp" />
           <div class="card-back">
             <h3>Jedi</h3>
             <p>Tython</p>
@@ -162,7 +165,7 @@
       </div>
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/yodafight.jpg" />
+          <img class="card-front" src="webroot/media/yodafight.jpg" />
           <div class="card-back">
             <h3>Ecole de guerre</h3>
             <p>Coruscant</p>
@@ -171,7 +174,7 @@
       </div>
       <div class="card-container">
         <div class="card">
-          <img class="card-front" src="media/artworks-kunFNf6PdEtzx4ZI-lYSQBw-t500x500.jpg" />
+          <img class="card-front" src="webroot/media/artworks-kunFNf6PdEtzx4ZI-lYSQBw-t500x500.jpg" />
           <div class="card-back">
             <h3>Ecole de l'humour</h3>
             <p>Tatooine</p>

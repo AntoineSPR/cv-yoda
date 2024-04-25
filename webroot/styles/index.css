@@ -1,6 +1,7 @@
 :root {
   --color-primary: #ff7100;
   --text-color: white;
+  --font-primary: "Oxanium", sans-serif;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   width: 100vw;
   background-image: url("../media/starry-background.gif");
   color: var(--text-color);
-  font-family: "Oxanium", sans-serif;
+  font-family: var(--font-primary);
   overflow-x: hidden;
 }
 
