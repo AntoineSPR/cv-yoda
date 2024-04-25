@@ -1,0 +1,98 @@
+.contact-details {
+  align-self: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  gap: 4rem;
+}
+
+.contact-details > div {
+  width: fit-content;
+}
+
+.contact-details div > p {
+  margin-bottom: 2rem;
+}
+
+.contact-details > div > p > a {
+  font-size: clamp(1rem, 4.5vw, 2rem);
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contact-details > div > p:hover > a {
+  color: var(--color-primary);
+}
+
+.contact-details > div > p > a > i {
+  margin-right: clamp(1rem, 5vw, 2rem);
+  height: 1rem;
+  width: 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact form p {
+  align-self: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 4.5vw, 2rem);
+}
+
+.contact form div {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+}
+
+.contact form div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  padding-bottom: 4rem;
+}
+
+.contact form div label {
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+.contact form div input,
+.contact form div select,
+.contact form div textarea {
+  width: 16rem;
+  box-shadow: inset -8px 0 16px #fff34787;
+  font-family: "Oxanium", sans-serif;
+}
+
+.contact form button {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 2px solid var(--color-primary);
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  border-radius: 3rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  background-color: #000000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-details {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .contact-details > div {
+    width: 100%;
+  }
+}
