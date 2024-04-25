@@ -66,9 +66,9 @@
             <p>OBJECTIFS</p>
         </div>
         <section class="objective">
-            <p>Former les futurs JEDI à la sagesse de la Force.</p>
-            <p>Sélectionner l'élu parmi eux pour vaincre l'armée de l'Empire.</p>
-            <p>Cours Magistraux à l'Université Supérieure des JEDI.</p>
+            <p>Fonder un nouvel ordre Jedi je dois.</p>
+            <p>Face à l'Empire, la sagesse je veux promouvoir.</p>
+            <p>À éveiller les jeunes générations à la Force je veux oeuvrer.</p>
         </section>
 
         <div id="experience">
@@ -239,7 +239,8 @@
         <div>
             <q>Robuste je suis grâce à la Force, mais pas à ce point-là.</q>
         </div>
-        <p>Fait avec ❤️ par <a href="https://github.com/AnnaGosme">Anna</a> & <a href="https://github.com/AntoineSPR">Antoine</a></p>
+        <p>Fait avec ❤️ par <a href="https://github.com/AnnaGosme">Anna</a> & <a
+                href="https://github.com/AntoineSPR">Antoine</a></p>
     </footer>
 </body>
 
