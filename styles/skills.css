@@ -63,6 +63,7 @@
   display: grid;
   grid-template-columns: repeat(4, 12rem);
   grid-template-rows: 16rem;
+  margin-left: 2rem;
 }
 
 .skills__desktop > div > p {
