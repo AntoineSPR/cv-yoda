@@ -1,39 +1,75 @@
 :root {
-    --color-primary: #ff7100;
-    --text-color: white;
-  }
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../media/planet-explosion.gif");
-    background-size: cover;
-    color:var(--text-color);
-    font-family: "Oxanium", sans-serif;
+  --color-primary: #ff7100;
+  --text-color: white;
 }
 
-h1, h2, p, a {
-    background-color: #400000;
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: var(--text-color);
+  font-family: "Oxanium", sans-serif;
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 4rem;
-    height: 2.8rem;
-    background-color: var(--color-primary);
-    color: var(--text-color);
-    font-family: "Oxanium", sans-serif;
-    font-size: clamp(1rem, 4.5vw, 2rem);
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-    -moz-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-    -o-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 20deg);
-    border-radius: 5px 5px 0 0;
-    outline: 1px solid transparent;
-    cursor: pointer;
-  }
+.error > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../media/exploding-planet.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+p,
+a {
+  background-color: #400000;
+}
+
+.error > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  font-family: var(--font-primary);
+  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
+  text-decoration: none;
+  border-radius: 3rem;
+  margin-top: 4rem;
+  padding: 0.5rem;
+  color: black;
+  border: 2px solid #ff8521;
+  background-color: var(--color-primary);
+  box-shadow: 0 9px #171717;
+  cursor: pointer;
+}
+
+button:hover {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  border: 2px solid var(--color-primary);
+  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
+  border-radius: 3rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+  background-color: #ce6005;
+}
+
+button:active {
+  color: var(--text-color);
+  background-color: #ce6005;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

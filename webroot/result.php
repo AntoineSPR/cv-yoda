@@ -31,20 +31,47 @@ if (!empty($errors)) {
     die();
 }
 
+$section = array_rand($reasons);
+$yodaAnswer = $reasons[$section][array_rand($reasons[$section])];
+
+function getYodaIntroPhrase($section)
+{
+    $introPhrase = "";
+    if ($section === "Perspective Unique et Humour") {
+        $introPhrase = "Ma perspective";
+    } else if ($section === "Mentorat et Apprentissage") {
+        $introPhrase = "Ma leçon";
+    } else if ($section === "Perspective Spirituelle et Philosophique") {
+        $introPhrase = "Ma philosophie";
+    } else {
+        $introPhrase = "Mon conseil";
+    }
+    return $introPhrase;
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/result.css" />
+    <link rel="stylesheet" href="webroot/styles/result.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet" />
     <title>Confirmation</title>
 </head>
 
-<body>
-    <h1>Pour votre message, je vous remercie. <br> Bientôt vous répondre, je vais.</h1>
-    <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
+<body class="result">
+    <div>
+        <h2>Besoin de <?php echo $section ?>, tu as ?</h2>
+        <h2> <?php echo getYodaIntroPhrase($section) ?>, je partage :</h2>
+        <h1><q><?php echo $yodaAnswer ?></q></h1>
+        <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
+    </div>
 </body>
