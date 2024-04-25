@@ -136,6 +136,17 @@ nav>a>p {
   z-index: 100;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  z-index: 101;
+}
+
 @media screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
