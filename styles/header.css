@@ -12,6 +12,19 @@
   padding: 0px 100px;
 }
 
+.introduction h1,
+.introduction h2,
+.introduction p {
+  background: none;
+}
+
+.introduction>*>span {
+  display: inline-block;
+  text-shadow: 0 0 4px var(--color-primary);
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+}
+
 .introduction h1 {
   font-size: 4em;
   font-weight: 400;
@@ -42,28 +55,28 @@
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0px 0px 10px 10px #4a2100;
 }
 
 .picture img:first-child {
   position: absolute;
   z-index: 0;
-  height: 70rem;
+  height: 70.5rem;
   width: 70rem;
-  margin-top: -34.063rem;
-  margin-left: -43.438rem;
+  margin-top: -34.5rem;
+  margin-left: -44.1rem;
 }
 
 nav {
   z-index: 100;
+  overflow-x: hidden;
 }
 
-nav > img {
+nav>img {
   display: none;
   z-index: 101;
 }
 
-nav > a {
+nav>a {
   width: 422px;
   height: 82px;
   background: #000000;
@@ -80,7 +93,7 @@ nav > a {
   text-decoration: none;
 }
 
-nav > a:hover {
+nav>a:hover {
   right: 0px;
 }
 
@@ -104,7 +117,7 @@ nav > a:hover {
   top: 335px;
 }
 
-nav > a > p {
+nav>a>p {
   font-size: 3em;
   align-self: center;
   padding-right: 10px;
@@ -124,25 +137,62 @@ nav > a > p {
 }
 
 @media screen and (max-width: 768px) {
-  nav > a {
+  .profile {
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+  }
+
+  .introduction {
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .introduction h2 {
+    text-align: center;
+  }
+
+  .introduction p {
+    text-align: center;
+  }
+
+  .picture img:first-child {
+    display: none;
+  }
+
+  .picture img:nth-child(2) {
+    box-shadow: 0px 0px 12px 6px var(--color-primary);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav>a {
+    position: fixed;
     width: 280px;
     height: 8px;
     background: #55aa3a;
     border-radius: 4px 0px 0px 4px;
     border: none;
-    right: 0px;
     padding-left: 10px;
     transition: 0.3s ease;
     box-shadow: 0px 0px 15px #55aa3a;
     margin-top: 110px;
-    right: -100%;
   }
 
-  nav > a > img {
+  nav>a:hover {
+    box-shadow: 0px 0px 15px var(--color-primary);
+    background: var(--color-primary);
+  }
+
+  nav>a:hover p {
+    border: 2px solid var(--color-primary);
+  }
+
+  nav>a>img {
     display: none;
   }
 
-  nav > a > p {
+  nav>a>p {
     background-color: black;
     color: var(--text-color);
     width: 212px;
@@ -154,9 +204,10 @@ nav > a > p {
     padding: 0px 5px 15px 5px;
     text-align: center;
     opacity: 1;
+    transition: 0.3s ease;
   }
 
-  nav > img {
+  nav>img {
     display: block;
     position: absolute;
     top: 0;
@@ -179,8 +230,9 @@ nav > a > p {
     opacity: 0;
   }
 
-  #checkbox-menu:checked ~ nav a {
+  #checkbox-menu:checked~nav a {
     right: 0;
+    position: absolute;
   }
 
   .black-sun {
@@ -188,35 +240,17 @@ nav > a > p {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(50%, -50%);
-    width: 250px;
-    height: 250px;
+    width: 125px;
+    height: 125px;
     background: #000000;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 4px #ff7100;
+    border-radius: 0 0 0 100%;
+    box-shadow: 0px 0px 10px 4px var(--color-primary);
     transition: width 0.3s, height 0.3s;
   }
 
-  #checkbox-menu:checked ~ .black-sun {
-    width: 1200px;
-    height: 1200px;
-  }
-
-  .profile {
-    flex-direction: column;
-    width: 90vw;
-    align-items: center;
-  }
-
-  .introduction {
-    align-items: center;
-    padding: 0px 20px;
-  }
-
-  .introduction h2 {
-    text-align: center;
-  }
-  .introduction p {
-    text-align: center;
+  #checkbox-menu:checked~.black-sun {
+    width: 600px;
+    height: 600px;
+    border-radius: 0 0 0 100%;
   }
 }

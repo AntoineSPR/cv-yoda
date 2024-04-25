@@ -164,7 +164,7 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .skills__desktop {
     display: grid;
     grid-template-columns: repeat(4, 10rem);
