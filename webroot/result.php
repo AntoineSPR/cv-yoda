@@ -74,5 +74,7 @@ function getYodaIntroPhrase($section)
         <h2> <?php echo getYodaIntroPhrase($section) ?>, je partage :</h2>
         <h1><q><?php echo $yodaAnswer ?></q></h1>
         <a href="https://cv-de-yoda-274d08f7642e.herokuapp.com/">Je rejoins Yoda</a>
+        <p>Pour plus de conseils, prendre rendez-vous avec Yoda, vous pouvez</p>
+        <p>100€ la consultation de 30 minutes</p>
     </div>
 </body>
