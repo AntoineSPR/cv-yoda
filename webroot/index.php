@@ -239,7 +239,7 @@
         <div>
             <q>Robuste je suis grâce à la Force, mais pas à ce point-là.</q>
         </div>
-        <p>Fait avec ❤️ par Anna & Antoine</p>
+        <p>Fait avec ❤️ par <a href="https://github.com/AnnaGosme">Anna</a> & <a href="https://github.com/AntoineSPR">Antoine</a></p>
     </footer>
 </body>
 
