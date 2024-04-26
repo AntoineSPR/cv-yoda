@@ -40,7 +40,9 @@
         </section>
 
         <input type="checkbox" id="checkbox-menu" />
-        <div class="black-sun"></div>
+        <div id="overlay">
+            <div class="black-sun"></div>
+        </div>
 
         <nav>
             <img src="media/menu(1).png" />
