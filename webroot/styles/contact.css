@@ -135,10 +135,6 @@
     align-items: center;
   }
 
-  .contact form div textarea {
-    margin-top: 4rem;
-  }
-
   .contact form div:nth-child(5) {
     flex-direction: column;
     justify-content: center;
