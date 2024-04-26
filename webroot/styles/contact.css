@@ -122,3 +122,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .contact form {
+    max-width: 50%;
+  }
+}
