@@ -90,7 +90,7 @@ ul {
   gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .error > div {
     padding: 1.5rem;
   }

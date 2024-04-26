@@ -147,7 +147,7 @@ nav > a > p {
   z-index: 101;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .profile {
     flex-direction: column;
     width: 90vw;
