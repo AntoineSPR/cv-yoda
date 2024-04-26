@@ -125,6 +125,7 @@
 
 @media screen and (max-width: 425px) {
   .contact form {
+    align-self: center;
     max-width: 50%;
   }
 }
