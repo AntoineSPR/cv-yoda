@@ -58,15 +58,7 @@ q {
 }
 
 .result > div > a:hover {
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12rem;
   border: 2px solid var(--color-primary);
-  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
-  border-radius: 3rem;
-  padding: 0.5rem;
   color: var(--text-color);
   background-color: #ce6005;
 }

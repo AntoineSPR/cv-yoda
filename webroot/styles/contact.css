@@ -75,7 +75,6 @@
 }
 
 .contact form button {
-  align-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,17 +92,9 @@
 }
 
 .contact form button:hover {
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12rem;
   border: 2px solid var(--color-primary);
-  font-size: clamp(0.8rem, 1.6vw, 1.8rem);
-  border-radius: 3rem;
-  padding: 0.5rem;
   color: var(--text-color);
-  background-color: #ce6005 ;
+  background-color: #ce6005;
 }
 
 .contact form button:active {
@@ -127,5 +118,11 @@
   .contact form {
     align-self: center;
     max-width: 50%;
+  }
+
+  .contact form div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
