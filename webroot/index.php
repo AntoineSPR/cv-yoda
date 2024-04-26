@@ -212,7 +212,7 @@
                 </div>
                 <div>
                     <label for="message" id="message">Votre message : </label>
-                    <textarea name="message" id="message" rows="10" minlength="30" required="true"></textarea>
+                    <textarea name="message" id="message" minlength="30" required="true"></textarea>
                 </div>
                 <button type="submit">Envoyer ma demande</button>
             </form>

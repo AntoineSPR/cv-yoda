@@ -83,6 +83,10 @@
   font-style: normal;
 }
 
+.contact form div textarea {
+  height: 100px;
+}
+
 .contact form button {
   display: flex;
   justify-content: center;
