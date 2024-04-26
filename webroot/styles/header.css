@@ -18,7 +18,7 @@
   background: none;
 }
 
-.introduction>*>span {
+.introduction > * > span {
   display: inline-block;
   text-shadow: 0 0 4px var(--color-primary);
   background-color: rgba(0, 0, 0, 0.75);
@@ -71,12 +71,12 @@ nav {
   overflow-x: hidden;
 }
 
-nav>img {
+nav > img {
   display: none;
   z-index: 101;
 }
 
-nav>a {
+nav > a {
   width: 422px;
   height: 82px;
   background: #000000;
@@ -93,7 +93,7 @@ nav>a {
   text-decoration: none;
 }
 
-nav>a:hover {
+nav > a:hover {
   right: 0px;
 }
 
@@ -117,7 +117,7 @@ nav>a:hover {
   top: 335px;
 }
 
-nav>a>p {
+nav > a > p {
   font-size: 3em;
   align-self: center;
   padding-right: 10px;
@@ -175,7 +175,7 @@ nav>a>p {
     box-shadow: 0px 0px 12px 6px var(--color-primary);
   }
 
-  nav>a {
+  nav > a {
     position: fixed;
     width: 280px;
     height: 8px;
@@ -188,20 +188,20 @@ nav>a>p {
     margin-top: 110px;
   }
 
-  nav>a:hover {
+  nav > a:hover {
     box-shadow: 0px 0px 15px var(--color-primary);
     background: var(--color-primary);
   }
 
-  nav>a:hover p {
+  nav > a:hover p {
     border: 2px solid var(--color-primary);
   }
 
-  nav>a>img {
+  nav > a > img {
     display: none;
   }
 
-  nav>a>p {
+  nav > a > p {
     background-color: black;
     color: var(--text-color);
     width: 212px;
@@ -216,7 +216,7 @@ nav>a>p {
     transition: 0.3s ease;
   }
 
-  nav>img {
+  nav > img {
     display: block;
     position: fixed;
     top: 0;
@@ -231,7 +231,7 @@ nav>a>p {
 
   #checkbox-menu {
     display: block;
-    position: fixed; 
+    position: fixed;
     top: 0;
     right: 0;
     width: 100px;
@@ -239,7 +239,7 @@ nav>a>p {
     opacity: 0;
   }
 
-  #checkbox-menu:checked~nav a {
+  #checkbox-menu:checked ~ nav a {
     right: 0;
     position: fixed;
   }
@@ -257,9 +257,25 @@ nav>a>p {
     transition: width 0.3s, height 0.3s;
   }
 
-  #checkbox-menu:checked~.black-sun {
+  #checkbox-menu:checked ~ .black-sun {
     width: 600px;
     height: 600px;
     border-radius: 0 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .black-sun {
+    width: 75px;
+    height: 75px;
+  }
+
+  nav > img {
+    width: 60px;
+  }
+
+  #checkbox-menu {
+    width: 65px;
+    height: 65px;
   }
 }

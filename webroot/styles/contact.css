@@ -80,6 +80,7 @@
   justify-content: center;
   align-items: center;
   width: 12rem;
+  min-width: 12rem;
   font-family: var(--font-primary);
   font-size: clamp(0.8rem, 1.6vw, 1.8rem);
   border-radius: 3rem;
