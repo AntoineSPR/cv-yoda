@@ -31,6 +31,15 @@
   width: 1rem;
 }
 
+.contact {
+  align-self: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
+  gap: 4rem;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
