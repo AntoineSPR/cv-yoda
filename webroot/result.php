@@ -4,27 +4,23 @@ require 'reasons.php';
 $data = array_map('htmlentities', array_map('trim', $_POST));
 
 $errors = [];
+$hackerMan = "Du côté obscur de l'inspecteur tu t'es rendu!";
 
 if (empty($data['name'])) {
-    $errors[] = "Please enter your name";
+    $errors[] = $hackerMan;
 }
 
 if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors[] = "Please enter a valid email";
+    $errors[] = "Seulement par la Force, te joindre je pourrai : un e-mail valide, indiquer tu dois.";
 }
 
 if (strlen($data['message']) < 30) {
-    $errors[] = "Please give us more details";
+    $errors[] = $hackerMan;
 }
 
 if (!isset($data['reason'])) {
-    $errors[] = 'Please select your reason';
+    $errors[] = $hackerMan;
 }
-
-if (empty($errors)) {
-
-}
-
 
 if (!empty($errors)) {
     require 'error.php';

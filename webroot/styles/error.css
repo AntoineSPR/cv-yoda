@@ -30,9 +30,12 @@
 
 h1,
 h2,
-p,
-a {
-  background-color: #400000;
+p {
+  background-color: black;
+  box-shadow: 0px 0px 10px 4px #ff7100;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 .error > div > button {
@@ -72,6 +75,19 @@ button:active {
   background-color: #ce6005;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+ul {  
+  list-style-type: none;
+  background-color: black;
+  box-shadow: 0px 0px 10px 4px red;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {

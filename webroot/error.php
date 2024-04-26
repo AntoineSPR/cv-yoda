@@ -12,10 +12,15 @@
 <body class="error">
   <div>
   <h1>ERREUR, TU AS COMMISE</h1>
-  <h2> Rejoins-moi du côté Obscur sur ce Sith
+  <ul>
+      <?php foreach($errors as $error) : ?>
+        <li><?= $error ?></li>
+      <?php endforeach; ?>
+  </ul>
+  <h2> Cède à la tentation du côté Obscur sur ce Sith
     <a href="http://fr.starwars.wikia.com/wiki/C%C3%B4t%C3%A9_Obscur_de_la_Force">Star Wars</a>
-  </h2>
-  <h2>Ou retourne chez les JEDI</h2>
+  <br>
+  Ou revient dans la lumière</h2>
   <button onclick="history.back()">Je rejoins Yoda</button>
 </div>
 </body>
