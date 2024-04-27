@@ -168,6 +168,18 @@
   opacity: 1;
 }
 
+.skills__desktop > div:nth-child(2):hover {
+  transform: translateY(-4rem);
+}
+
+.skills__desktop > div:nth-child(5):hover {
+  transform: translateX(-6rem);
+}
+
+.skills__desktop > div:nth-child(6):hover {
+  transform: translateX(-4rem);
+}
+
 @media screen and (max-width: 768px) {
   .skills__desktop {
     display: grid;
@@ -183,7 +195,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   .skills__desktop {
     display: none;
   }
