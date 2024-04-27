@@ -177,7 +177,7 @@
 }
 
 .skills__desktop > div:nth-child(6):hover {
-  transform: translateX(-4rem);
+  transform: translate(-6rem, -2rem);
 }
 
 @media screen and (max-width: 768px) {
