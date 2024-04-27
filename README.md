@@ -5,7 +5,7 @@ https://cv-de-yoda-274d08f7642e.herokuapp.com/
 Comprend :
 - Deux version du menu (boutons animés en CSS pour ordinateur, "hamburger" géré en JS pour mobile/tablette)
 - Animations en CSS (cartes recto-verso, système stellaire)
-- Formulaire fonctionnel en PHP
+- Formulaire fonctionnel en PHP (renvoie vers une page de réponse ou une page d'erreur)
 
 Anna : https://github.com/AnnaGosme
 
