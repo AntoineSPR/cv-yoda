@@ -72,7 +72,7 @@
   box-shadow: 0px 0px 2px 3px #52a338;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
   .experience,
   .education {
     flex-direction: column;
