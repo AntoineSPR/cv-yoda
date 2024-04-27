@@ -4,7 +4,7 @@ let overlay = document.getElementById("overlay");
 
 // Check if the screen is in mobile mode (warning: only checks once when the DOM is loaded)
 function isMobile() {
-    return window.matchMedia('(max-width: 1024px)').matches;
+    return window.matchMedia('(max-width: 1279px)').matches;
 }
 
 // Collapse the whole menu
