@@ -1,35 +1,7 @@
 <?php
 require 'reasons.php';
-
-$data = array_map('htmlentities', array_map('trim', $_POST));
-
-$errors = [];
-$hackerMan = "Du côté obscur de l'inspecteur tu t'es rendu!";
-
-if (empty($data['name'])) {
-    $errors[] = $hackerMan;
-}
-
-if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors[] = "Seulement par la Force, te joindre je pourrai : un e-mail valide, indiquer tu dois.";
-}
-
-if (strlen($data['message']) < 30) {
-    $errors[] = $hackerMan;
-}
-
-if (!isset($data['reason'])) {
-    $errors[] = $hackerMan;
-}
-
-if (!empty($errors)) {
-    require 'error.php';
-    die();
-}
-
 $section = array_rand($reasons);
 $yodaAnswer = $reasons[$section][array_rand($reasons[$section])];
-
 function getYodaIntroPhrase($section)
 {
     $introPhrase = "";
@@ -45,8 +17,36 @@ function getYodaIntroPhrase($section)
     return $introPhrase;
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = array_map('htmlentities', array_map('trim', $_POST));
 
+    $errors = [];
+    $hackerMan = "Du côté obscur de l'inspecteur tu t'es rendu!";
 
+    if (empty($data['name'])) {
+        $errors[] = $hackerMan;
+    }
+
+    if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Seulement par la Force, te joindre je pourrai : un e-mail valide, indiquer tu dois.";
+    }
+
+    if (strlen($data['message']) < 30) {
+        $errors[] = $hackerMan;
+    }
+
+    if (!isset($data['reason'])) {
+        $errors[] = $hackerMan;
+    }
+
+    if (!empty($errors)) {
+        require 'error.php';
+        die();
+    } else {
+        header('Location: result.php');
+        die();
+    }
+}
 ?>
 
 <!DOCTYPE html>
