@@ -11,4 +11,4 @@ Anna : https://github.com/AnnaGosme
 
 Premier projet présenté à la Wild Code School dans le cadre de la Préparation Opérationnelle à l'Emploi en PHP.
 
-((Version sans PHP ici : https://antoinespr.github.io/cv-yoda/))
+((Backup : version sans formulaire PHP sur https://antoinespr.github.io/cv-yoda/))
