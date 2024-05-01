@@ -27,7 +27,7 @@ if (!empty($errors)) {
     die();
 }
 
-$section = array_rand($reasons);
+$section = $data['reason'];
 $yodaAnswer = $reasons[$section][array_rand($reasons[$section])];
 
 function getYodaIntroPhrase($section)
