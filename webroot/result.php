@@ -3,8 +3,6 @@ require 'reasons.php';
 
 $data = array_map('htmlentities', array_map('trim', $_POST));
 
-var_dump($data);
-
 $errors = [];
 $hackerMan = "Du côté obscur de l'inspecteur tu t'es rendu!";
 
@@ -30,7 +28,6 @@ if (!empty($errors)) {
 }
 
 $section = $data['reason'];
-echo $section;
 $yodaAnswer = $reasons[$section][array_rand($reasons[$section])];
 
 function getYodaIntroPhrase($section)
