@@ -195,10 +195,10 @@
                 <div>
                     <label for="reason"> Objet de votre demande : </label>
                     <select for="reason" name="reason" size="1" required="true">
-                        <option value="" disabled selected><em>Choisissez une option </em></option>
+                        <option value="reason" disabled selected><em>Choisissez une option </em></option>
                         <?php require 'reasons.php'; ?>
                         <?php foreach ($reasons as $key => $reason): ?>
-                            <option value="<?php $key ?>"><?= $key ?>
+                            <option value="<?php echo $key ?>"><?= $key ?>
                             </option>
                         <?php endforeach ?>
                     </select>
